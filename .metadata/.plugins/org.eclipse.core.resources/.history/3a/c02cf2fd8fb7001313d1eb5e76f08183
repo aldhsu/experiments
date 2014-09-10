@@ -1,0 +1,18 @@
+<html>
+	<head>
+		<title>Saluton Mondo</title>
+	</head>
+	<body bgcolor ="#000000" text="FF00FF">
+		<p>This is a Java applet. </p>
+		<object
+			code ="WeightScale.java"
+			codebase="\\src\\webapps"
+			height ="150"
+			width ="300" >
+			<param name="person" value = "Allen">
+			<param name="weight" value = "150">
+				<p>You need a Java-enabled browser to see this.</p>
+		</object>
+		
+	</body>
+</html>

@@ -1,0 +1,24 @@
+<?php
+/* @var $this ItemIdTableController */
+/* @var $dataProvider CActiveDataProvider */
+$models = ItemIdTable::model()->findAll();
+$list = CHtml::listData($models,'sku','product_desc');
+echo var_dump($list);	
+$this->breadcrumbs=array(
+	'Item Id Tables',
+);
+
+$this->menu=array(
+	array('label'=>'Create ItemIdTable', 'url'=>array('create')),
+	array('label'=>'Manage ItemIdTable', 'url'=>array('admin')),
+);
+?>
+
+<h1>Inventory</h1>
+
+<?php
+echo CHtml::dropDownList('sku', $models->sku, $list, array('empty' => '(Select a sku'));
+/*$this->widget('zii.widgets.CListView', array(
+	'dataProvider'=>$dataProvider,
+	'itemView'=>'_view',
+)); */?>

@@ -1,0 +1,36 @@
+<?php
+/* @var $this ItemIdTableController */
+/* @var $model ItemIdTable */
+$models = ItemIdTable::model()->findAll();
+echo var_dump($models);
+
+$this->breadcrumbs=array(
+	'Item Id Tables'=>array('index'),
+	$model->id,
+);
+
+$this->menu=array(
+	array('label'=>'List ItemIdTable', 'url'=>array('index')),
+	array('label'=>'Create ItemIdTable', 'url'=>array('create')),
+	array('label'=>'Update ItemIdTable', 'url'=>array('update', 'id'=>$model->id)),
+	array('label'=>'Delete ItemIdTable', 'url'=>'#', 'linkOptions'=>array('submit'=>array('delete','id'=>$model->id),'confirm'=>'Are you sure you want to delete this item?')),
+	array('label'=>'Manage ItemIdTable', 'url'=>array('admin')),
+);
+?>
+
+<h1>Inventory List#<?php echo $model->id; ?></h1>
+
+<?php $this->widget('zii.widgets.CDetailView', array(
+	'data'=>$model,
+	'attributes'=>array(
+		'id',
+		'sku', 
+		'item_desc',
+		'quantity',
+	),	
+)); 
+?>
+
+<b><?php #	echo CHtml::dropDownList('product_desc_list', 'id', $models); ?>:</b>
+	<?php  echo CHtml::link(CHtml::encode($data->sku), array('view', 'sku'=>$data->sku)); ?>
+	<br />

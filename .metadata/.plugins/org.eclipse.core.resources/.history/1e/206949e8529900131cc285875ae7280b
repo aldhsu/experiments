@@ -1,0 +1,32 @@
+<?php
+/* @var $this ItemIdTableController */
+/* @var $data ItemIdTable */
+$models = ItemIdTable::model()->findAll()
+echo $models;
+?>
+c
+<div class="view">
+
+	<b><?php echo CHtml::dropDownList('product_desc_list', $select, $models); ?>:</b>
+	<?php  echo CHtml::link(CHtml::encode($data->sku), array('view', 'sku'=>$data->sku)); ?>
+	<br />
+
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('sku')); ?>:</b>
+	<?php  echo CHtml::link(CHtml::encode($data->sku), array('view', 'sku'=>$data->sku)); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('item_desc')); ?>:</b>
+	<?php echo CHtml::encode($data->item_desc); ?>
+	<br />
+
+	<b><?php echo CHtml::encode($data->getAttributeLabel('quantity')); ?>:</b>
+	<?php echo CHtml::encode($data->quantity); ?>
+	<br />
+	
+	<b><?php echo CHtml::encode($data->getAttributeLabel('item_type')); ?>:</b>
+	<?php echo CHtml::encode($data->item_type); ?>
+	<br />
+
+		
+</div>

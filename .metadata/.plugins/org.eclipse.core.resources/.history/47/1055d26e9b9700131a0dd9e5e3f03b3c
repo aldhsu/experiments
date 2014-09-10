@@ -1,0 +1,21 @@
+<?php
+/* @var $this ItemIdTableController */
+/* @var $model ItemIdTable */
+
+$this->breadcrumbs=array(
+	'Item Id Tables'=>array('index'),
+	$model->id=>array('view','id'=>$model->id),
+	'Update',
+);
+
+$this->menu=array(
+	array('label'=>'List ItemIdTable', 'url'=>array('index')),
+	array('label'=>'Create ItemIdTable', 'url'=>array('create')),
+	array('label'=>'View ItemIdTable', 'url'=>array('view', 'id'=>$model->id)),
+	array('label'=>'Manage ItemIdTable', 'url'=>array('admin')),
+);
+?>
+
+<h1>Update ItemIdTable <?php echo $model->id; ?></h1>
+
+<?php $this->renderPartial('_form', array('model'=>$model)); ?>

@@ -1,0 +1,23 @@
+-- VERSION_4
+-- START DISKCACHE
+D:\Workspace\.metadata\.plugins\org.eclipse.core.resources\.projects\TriangleWords\com.python.pydev.analysis\v2_indexcache
+main|1394167399220|D:\Workspace\TriangleWords\main.py
+-- END DISKCACHE
+-- START DICTIONARY
+1
+1=main
+-- END DICTIONARY
+-- START TREE 1
+8
+!<m|0|
+alp|1|alpha_to_int!11@
+cre|1|create_alphabet!10@
+fil|1|file!11@
+is_|1|is_triangle!10@
+lis|2|listofwords!11@listofwordsasnumbers!11@
+tot|1|total!11@
+tri|0|
+-- END TREE
+-- START TREE 2
+0
+-- END TREE

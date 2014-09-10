@@ -1,0 +1,12 @@
+INSTUPmain
+D:\Workspace\OptimalPath\main.py
+INFOS:&&3|1|2|0&&3|3|2|0&&3|4|2|0&&2|5|2|0&&2|6|2|0&&2|7|2|0&&2|8|2|0&&2|9|2|0
+rowlist=4
+smallest_node_weighted_value=5
+listoflists=3
+file=1
+node_weighted_value=6
+walk_path=9
+choose_path=7
+simplest_path=8
+main=2
